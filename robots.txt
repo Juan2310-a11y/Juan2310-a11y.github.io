@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap para indexación en Google
+Sitemap: https://juanapaestegui.github.io/sitemap.xml

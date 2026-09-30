@@ -1,0 +1,5 @@
+# Archivos de entorno y logs
+node_modules/
+*.log
+.DS_Store
+Thumbs.db

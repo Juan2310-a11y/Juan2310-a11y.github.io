@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Apaestegui | Desarrollador de Software & Full Stack Engineer</title>
+    
+    <!-- Metadatos SEO para Google y Motores de Búsqueda -->
+    <meta name="description" content="Portafolio profesional de Juan Apaestegui. Desarrollador Full Stack especializado en JavaScript, TypeScript, React, Node.js, Python y arquitecturas escalables.">
+    <meta name="keywords" content="Juan Apaestegui, Desarrollador de Software, Software Engineer, Full Stack, Frontend, Backend, React, Node.js, Python, Portafolio Web, Lima, Perú">
+    <meta name="author" content="Juan Apaestegui">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://juanapaestegui.github.io/">
+
+    <!-- Open Graph / Redes Sociales (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://juanapaestegui.github.io/">
+    <meta property="og:title" content="Juan Apaestegui | Desarrollador de Software & Full Stack">
+    <meta property="og:description" content="Portafolio profesional de Juan Apaestegui. Desarrollador Full Stack especializado en aplicaciones web modernas, limpias y de alto rendimiento.">
+    <meta property="og:site_name" content="Juan Apaestegui Portfolio">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://juanapaestegui.github.io/">
+    <meta name="twitter:title" content="Juan Apaestegui | Desarrollador de Software">
+    <meta name="twitter:description" content="Portafolio profesional de Juan Apaestegui. Soluciones web modernas y escalables.">
+
+    <!-- Schema.org Datos Estructurados JSON-LD para Google Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Juan Apaestegui",
+      "jobTitle": "Desarrollador de Software / Full Stack Engineer",
+      "url": "https://juanapaestegui.github.io/",
+      "sameAs": [
+        "https://github.com",
+        "https://linkedin.com",
+        "https://twitter.com"
+      ],
+      "knowsAbout": [
+        "Desarrollo Web",
+        "Full Stack Development",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "Python",
+        "Cloud Architecture",
+        "UI/UX Design"
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Barra de Progreso de Lectura -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Navegación -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-name">Juan</span>
+                <span class="logo-accent">.Dev</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Sobre Mí</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Proyectos</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experiencia</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Selector de Tema (Modo Oscuro / Claro) -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+
+                <!-- Botón de Contacto Rápido -->
+                <a href="#contact" class="btn btn-outline nav-cta">Hablemos</a>
+
+                <!-- Botón Hamburguesa Móvil -->
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero" id="hero">
+            <canvas id="particles-canvas" class="hero-canvas"></canvas>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-status">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Disponible para nuevos proyectos</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Hola, soy <span class="text-gradient">Juan Apaestegui</span>
+                    </h1>
+                    
+                    <div class="hero-subtitle-container">
+                        <span class="hero-prefix">Especialista en</span>
+                        <span class="typewriter-text" id="typewriter"></span>
+                        <span class="typewriter-cursor">|</span>
+                    </div>
+
+                    <p class="hero-description">
+                        Transformo ideas complejas en experiencias digitales de alto impacto, combinando diseño moderno, arquitectura de software escalable y rendimiento optimizado.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Ver Proyectos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contáctame</span>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost" id="download-cv" title="Descargar Currículum">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            <span>CV / Resume</span>
+                        </a>
+                    </div>
+
+                    <!-- Redes Sociales -->
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:juan.apaestegui@example.com" class="social-icon" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter / X">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-card-wrapper">
+                        <div class="avatar-glow"></div>
+                        <div class="avatar-card">
+                            <div class="avatar-header">
+                                <span class="card-dot dot-red"></span>
+                                <span class="card-dot dot-yellow"></span>
+                                <span class="card-dot dot-green"></span>
+                                <span class="card-title">developer.config.json</span>
+                            </div>
+                            <div class="code-preview">
+                                <p><span class="c-keyword">const</span> <span class="c-variable">developer</span> = {</p>
+                                <p class="indent-1"><span class="c-prop">name</span>: <span class="c-string">"Juan Apaestegui"</span>,</p>
+                                <p class="indent-1"><span class="c-prop">role</span>: <span class="c-string">"Full Stack Engineer"</span>,</p>
+                                <p class="indent-1"><span class="c-prop">passion</span>: <span class="c-string">"Clean Code & UX"</span>,</p>
+                                <p class="indent-1"><span class="c-prop">location</span>: <span class="c-string">"Disponible Remoto / Global"</span>,</p>
+                                <p class="indent-1"><span class="c-prop">skills</span>: [</p>
+                                <p class="indent-2"><span class="c-string">"TypeScript"</span>, <span class="c-string">"React"</span>, <span class="c-string">"Node.js"</span>,</p>
+                                <p class="indent-2"><span class="c-string">"Python"</span>, <span class="c-string">"Cloud"</span>, <span class="c-string">"UI/UX"</span></p>
+                                <p class="indent-1">],</p>
+                                <p class="indent-1"><span class="c-prop">status</span>: <span class="c-string">"🚀 Building the future"</span></p>
+                                <p>};</p>
+                            </div>
+                            <!-- Floating Badges -->
+                            <div class="floating-pill pill-1">
+                                <span class="pill-icon">⚡</span>
+                                <span>High Performance</span>
+                            </div>
+                            <div class="floating-pill pill-2">
+                                <span class="pill-icon">✨</span>
+                                <span>Pixel Perfect</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-down-btn" aria-label="Desplazar hacia abajo">
+                <span class="mouse-icon">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </section>
+
+        <!-- ================= ABOUT SECTION ================= -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Conóceme</span>
+                    <h2 class="section-title">Sobre <span class="text-gradient">Mí</span></h2>
+                    <p class="section-subtitle">Pasión por la tecnología, el código limpio y la resolución creativa de problemas.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-image-container">
+                        <div class="about-photo-wrapper">
+                            <div class="photo-placeholder">
+                                <div class="avatar-initials">JA</div>
+                                <div class="avatar-ring"></div>
+                            </div>
+                            <div class="experience-badge">
+                                <span class="badge-num" data-target="4">4+</span>
+                                <span class="badge-lbl">Años de Exp.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text-content">
+                        <h3>Desarrollando soluciones digitales con ingeniería de vanguardia</h3>
+                        <p>
+                            Soy un desarrollador comprometido con crear productos web que no solo funcionen a la perfección, sino que ofrezcan una experiencia intuitiva, accesible y visualmente memorable.
+                        </p>
+                        <p>
+                            A lo largo de mi trayectoria he diseñado y desarrollado aplicaciones completas: desde interfaces frontend interactivas y altamente responsivas hasta arquitecturas backend resilientes y APIs optimizadas.
+                        </p>
+
+                        <!-- Métricas / Contadores -->
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number" data-target="30">30+</span>
+                                <span class="stat-label">Proyectos Realizados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number" data-target="99">99%</span>
+                                <span class="stat-label">Clientes Satisfechos</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number" data-target="15">15+</span>
+                                <span class="stat-label">Tecnologías Dominadas</span>
+                            </div>
+                        </div>
+
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">🎯</div>
+                                <div>
+                                    <h4>Enfoque en Resultados</h4>
+                                    <p>Código escalable diseñado para resolver necesidades reales de negocio.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">💡</div>
+                                <div>
+                                    <h4>Aprendizaje Constante</h4>
+                                    <p>Adoptando siempre las mejores prácticas y estándares modernos de la industria.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS SECTION ================= -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Stack Técnico</span>
+                    <h2 class="section-title">Habilidades & <span class="text-gradient">Tecnologías</span></h2>
+                    <p class="section-subtitle">Herramientas y lenguajes que utilizo para dar vida a proyectos robustos y modernos.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Categoría 1: Frontend -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="cat-icon frontend-icon">💻</div>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <p class="cat-desc">Creación de interfaces reactivas, accesibles y con animaciones fluidas.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag"><span class="tag-bullet"></span>JavaScript (ES6+)</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>TypeScript</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>React.js</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>HTML5 & CSS3</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>Tailwind CSS</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>Next.js</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoría 2: Backend -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="cat-icon backend-icon">⚙️</div>
+                            <h3>Backend & APIs</h3>
+                        </div>
+                        <p class="cat-desc">Servidores seguros, lógica de negocio eficiente y arquitecturas escalables.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag"><span class="tag-bullet"></span>Node.js / Express</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>Python / FastAPI</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>RESTful APIs</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>GraphQL</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>Autenticación JWT / OAuth</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoría 3: Databases & Cloud -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="cat-icon db-icon">🗄️</div>
+                            <h3>Bases de Datos & Cloud</h3>
+                        </div>
+                        <p class="cat-desc">Modelado de datos, optimización de consultas y despliegues en la nube.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag"><span class="tag-bullet"></span>PostgreSQL</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>MongoDB</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>Redis</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>Docker</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>AWS / Cloudflare</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>Git & GitHub CI/CD</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoría 4: UI/UX & Metodologías -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="cat-icon design-icon">🎨</div>
+                            <h3>Diseño & Buenas Prácticas</h3>
+                        </div>
+                        <p class="cat-desc">Diseño centrado en el usuario, principios SOLID y optimización de rendimiento.</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag"><span class="tag-bullet"></span>Figma / Prototipado</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>Responsive Web Design</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>Clean Architecture</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>SEO Técnico</span>
+                            <span class="skill-tag"><span class="tag-bullet"></span>Testing (Jest / Cypress)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS SECTION ================= -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portafolio</span>
+                    <h2 class="section-title">Proyectos <span class="text-gradient">Destacados</span></h2>
+                    <p class="section-subtitle">Una muestra seleccionada de mis trabajos más recientes y relevantes.</p>
+                </div>
+
+                <!-- Filtros de Proyectos -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend & UI</button>
+                    <button class="filter-btn" data-filter="backend">Backend & APIs</button>
+                </div>
+
+                <!-- Grid de Proyectos -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Proyecto 1 -->
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-thumb">
+                            <div class="project-banner banner-1">
+                                <span class="banner-badge">SaaS Cloud</span>
+                                <div class="mockup-screen">
+                                    <div class="mockup-bar"><span></span><span></span><span></span></div>
+                                    <div class="mockup-content">
+                                        <div class="dash-line w-80"></div>
+                                        <div class="dash-cards">
+                                            <div class="dash-box"></div>
+                                            <div class="dash-box"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <h3 class="project-title">CloudMetrics Dashboard</h3>
+                            <p class="project-desc">
+                                Plataforma de analítica en tiempo real para monitoreo de métricas empresariales con gráficos dinámicos y reportes automáticos en PDF.
+                            </p>
+                            <div class="project-actions">
+                                <button class="btn-project-detail" data-modal="modal-1">Detalles</button>
+                                <div class="action-links">
+                                    <a href="#" class="icon-link" aria-label="Repositorio de código" title="Ver Código">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="#" class="icon-link" aria-label="Demo en vivo" title="Ver Demo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-thumb">
+                            <div class="project-banner banner-2">
+                                <span class="banner-badge">E-Commerce</span>
+                                <div class="mockup-screen">
+                                    <div class="mockup-bar"><span></span><span></span><span></span></div>
+                                    <div class="mockup-content">
+                                        <div class="dash-grid-3">
+                                            <div class="item-card"></div>
+                                            <div class="item-card"></div>
+                                            <div class="item-card"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">Zustand</span>
+                            </div>
+                            <h3 class="project-title">Aura Luxe Store</h3>
+                            <p class="project-desc">
+                                Tienda virtual de alta gama con catálogo dinámico, pasarela de pagos simulada con Stripe y carrito de compras persistente.
+                            </p>
+                            <div class="project-actions">
+                                <button class="btn-project-detail" data-modal="modal-2">Detalles</button>
+                                <div class="action-links">
+                                    <a href="#" class="icon-link" aria-label="Repositorio de código" title="Ver Código">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="#" class="icon-link" aria-label="Demo en vivo" title="Ver Demo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="project-card" data-category="backend">
+                        <div class="project-thumb">
+                            <div class="project-banner banner-3">
+                                <span class="banner-badge">API RESTful</span>
+                                <div class="mockup-screen terminal-look">
+                                    <div class="mockup-bar"><span></span><span></span><span></span></div>
+                                    <div class="terminal-text">
+                                        <code>GET /api/v1/auth 200 OK</code>
+                                        <code>POST /api/v1/sync 201 CREATED</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">Redis</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                            <h3 class="project-title">Nexus Gateway Microservice</h3>
+                            <p class="project-desc">
+                                Microservicio de autenticación de alta concurrencia con rate-limiting en Redis, documentación Swagger interactiva y contenedorización Docker.
+                            </p>
+                            <div class="project-actions">
+                                <button class="btn-project-detail" data-modal="modal-3">Detalles</button>
+                                <div class="action-links">
+                                    <a href="#" class="icon-link" aria-label="Repositorio de código" title="Ver Código">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="#" class="icon-link" aria-label="Demo en vivo" title="Ver Demo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 4 -->
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-thumb">
+                            <div class="project-banner banner-4">
+                                <span class="banner-badge">Web App</span>
+                                <div class="mockup-screen">
+                                    <div class="mockup-bar"><span></span><span></span><span></span></div>
+                                    <div class="mockup-content">
+                                        <div class="kanban-cols">
+                                            <div class="col"></div>
+                                            <div class="col"></div>
+                                            <div class="col"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Socket.io</span>
+                            </div>
+                            <h3 class="project-title">FlowBoard Collaborative</h3>
+                            <p class="project-desc">
+                                Gestor de tareas Kanban en tiempo real con sincronización bidireccional por WebSockets, drag & drop interactivo y asignación de roles.
+                            </p>
+                            <div class="project-actions">
+                                <button class="btn-project-detail" data-modal="modal-4">Detalles</button>
+                                <div class="action-links">
+                                    <a href="#" class="icon-link" aria-label="Repositorio de código" title="Ver Código">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="#" class="icon-link" aria-label="Demo en vivo" title="Ver Demo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EXPERIENCE & EDUCATION ================= -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Trayectoria</span>
+                    <h2 class="section-title">Experiencia & <span class="text-gradient">Educación</span></h2>
+                    <p class="section-subtitle">El camino que ha forjado mi criterio técnico y capacidad resolutiva.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 - Presente</span>
+                            <h3 class="timeline-role">Senior Full Stack Developer</h3>
+                            <h4 class="timeline-company">InnoTech Solutions</h4>
+                            <p class="timeline-desc">
+                                Liderazgo en el desarrollo de arquitecturas frontend modernas con React y microservicios en Node.js. Optimización del tiempo de carga web en un 40% y reducción de latencia en consultas críticas.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Docker</span>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021 - 2023</span>
+                            <h3 class="timeline-role">Frontend & Web Specialist</h3>
+                            <h4 class="timeline-company">Digital Pulse Agency</h4>
+                            <p class="timeline-desc">
+                                Creación de más de 20 sitios y plataformas web interactivas para clientes internacionales. Implementación de sistemas de diseño, accesibilidad web (WCAG) e integraciones con múltiples pasarelas de pago.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>JavaScript</span>
+                                <span>TypeScript</span>
+                                <span>CSS3/Sass</span>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2018 - 2022</span>
+                            <h3 class="timeline-role">Ingeniería de Sistemas y Computación</h3>
+                            <h4 class="timeline-company">Grado Universitario</h4>
+                            <p class="timeline-desc">
+                                Formación integral en estructuras de datos, algoritmos, bases de datos relacionales/no relacionales, ingeniería de software y desarrollo de sistemas distribuidos.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Algoritmos</span>
+                                <span>Arquitectura</span>
+                                <span>Bases de Datos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SERVICES SECTION ================= -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Lo Que Hago</span>
+                    <h2 class="section-title">Servicios & <span class="text-gradient">Especialidades</span></h2>
+                    <p class="section-subtitle">Soluciones a medida para proyectos que exigen calidad, rapidez y escalabilidad.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>Desarrollo Web Full Stack</h3>
+                        <p>
+                            Sitios web modernos, portales corporativos y aplicaciones web de punta a punta, construidos con las tecnologías más eficientes del mercado.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3>Optimización & Rendimiento</h3>
+                        <p>
+                            Auditoría de performance, reducción de tiempos de carga (Core Web Vitals), optimización SEO técnico y mejores prácticas de accesibilidad.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🔌</div>
+                        <h3>Diseño e Integración de APIs</h3>
+                        <p>
+                            Construcción y consumo de servicios RESTful y GraphQL seguros, rápidos y bien documentados para conectar sistemas heterogéneos.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Diseño UI/UX Responsivo</h3>
+                        <p>
+                            Interfaces intuitivas diseñadas bajo la filosofía Mobile-First, adaptables a cualquier dispositivo con microinteracciones refinadas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT SECTION ================= -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Conectemos</span>
+                    <h2 class="section-title">Ponte en <span class="text-gradient">Contacto</span></h2>
+                    <p class="section-subtitle">¿Tienes una idea en mente o buscas incorporar talento a tu equipo? Escríbeme y charlemos.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Información de Contacto -->
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        <p>
+                            Estoy abierto a oportunidades laborales, proyectos freelance y colaboraciones en proyectos innovadores.
+                        </p>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div>
+                                    <span class="info-label">Email Directo</span>
+                                    <a href="mailto:juan.apaestegui@example.com" class="info-value">juan.apaestegui@example.com</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div>
+                                    <span class="info-label">Ubicación</span>
+                                    <span class="info-value">Lima, Perú (Disponible Remoto)</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                </div>
+                                <div>
+                                    <span class="info-label">Redes Profesionales</span>
+                                    <span class="info-value">GitHub / LinkedIn / X</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card de disponibilidad rápida -->
+                        <div class="availability-card">
+                            <span class="pulse-circle"></span>
+                            <div>
+                                <strong>Respuesta estimada:</strong>
+                                <p>Menos de 24 horas hábiles</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de Contacto Interactivo -->
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Nombre Completo *</label>
+                                <input type="text" id="name" name="name" placeholder="Ej. Carlos Mendoza" required>
+                                <span class="error-msg" id="name-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" placeholder="carlos@empresa.com" required>
+                                <span class="error-msg" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <input type="text" id="subject" name="subject" placeholder="Propuesta de proyecto / Consulta">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensaje *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto o necesidad..." required></textarea>
+                                <span class="error-msg" id="message-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                                <span>Enviar Mensaje</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#hero" class="logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-name">Juan</span>
+                    <span class="logo-accent">.Dev</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-copy">© 2026 Juan Apaestegui. Diseñado y construido con código limpio y dedicación.</p>
+            </div>
+            
+            <div class="footer-right">
+                <ul class="footer-nav">
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#experience">Experiencia</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante Volver Arriba -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver al inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- Notificación Toast -->
+    <div id="toast" class="toast">
+        <div class="toast-icon">✓</div>
+        <div class="toast-content">
+            <h4 class="toast-title" id="toast-title">¡Mensaje Enviado!</h4>
+            <p class="toast-message" id="toast-message">Gracias por comunicarte. Te responderé a la brevedad.</p>
+        </div>
+    </div>
+
+    <!-- Modal para Detalle de Proyectos -->
+    <div id="project-modal" class="modal" aria-hidden="true">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close" aria-label="Cerrar modal">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Se llena dinámicamente con JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
