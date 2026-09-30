@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap para indexación en Google
-Sitemap: https://juanapaestegui.github.io/sitemap.xml
+Sitemap: https://Juan2310-a11y.github.io/sitemap.xml
